@@ -6,7 +6,9 @@ class Solution {
 public:
     std::string longestCommonPrefix(std::vector<std::string>& strs) {
         std::string res = "";
-        if (strs.empty()) return res;
+        if (strs.empty()){
+            return res;
+        } 
 
         for (int i = 0; i < strs[0].size(); ++i) {
             char c = strs[0][i];
