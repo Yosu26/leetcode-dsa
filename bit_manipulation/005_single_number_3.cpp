@@ -8,10 +8,12 @@ class Solution{
         for(int num : nums){
             xorALL ^= num;
         }
-        int diffBit = xorALL & (-xorALL);
+        unsigned int uxor = static_cast<unsigned int>(xorALL);
+        unsigned int diffBit = uxor & (-uxor);
+
         int a = 0, b = 0;
         for(int num : nums){
-            if(num & diffBit){
+            if(static_cast<unsigned int>(num) & diffBit){
                 a ^= num;
             }else{
                 b ^= num;
