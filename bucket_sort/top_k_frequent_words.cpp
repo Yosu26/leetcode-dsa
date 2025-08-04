@@ -2,6 +2,9 @@
 #include <string>
 #include <unordered_map>
 #include <queue>
+#include <algorithm>
+
+using namespace std;
 
 class Solution {
 public:
