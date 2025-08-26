@@ -21,6 +21,7 @@ public:
             result.push_back(minHeap.top().second);
             minHeap.pop();
         }
+        if (result.size() < k) return {-1};
         return result;
     }
 };
